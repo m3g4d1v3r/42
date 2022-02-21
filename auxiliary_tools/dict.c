@@ -3,8 +3,8 @@ int main()
 	#include <stdio.h>
 	char	**dict_ptr;
 	char	*dict[] = {
-		"cafe",
-		"energetico",
+		"coffee",
+		"energy soda",
 		"metal",
 		"john wick",
 		"\x00"
