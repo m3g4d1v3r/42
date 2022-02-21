@@ -67,5 +67,5 @@ Test(ft_atoi, testUnderflow) {
 
 Test(ft_atoi, testSpicyCases) {
   cr_assert_eq(ft_atoi((void *) 0), 0);
-  // cr_assert_eq(malloc(sizeof(char *)), 0); // Very Spicy (Beware!)
+  // cr_assert_eq(malloc(sizeof(char *)), 0); // Very Spicy
 }
