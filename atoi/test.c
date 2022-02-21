@@ -11,14 +11,14 @@ Test(ft_atoi, testDumbCases) {
   cr_assert_eq(ft_atoi("atoi with Bug(?): searching for the hidden pickle (the movie)"), 0);
 }
 
-Test(ft_atoi, testBasePepinoOctal)
+Test(ft_atoi, testBasePickleOctal)
 {
   int res = ft_atoi("\tPickle 0010 octal - x -33\n\n\r\r\t\t");
   int expected = 8;
   cr_assert_eq(res, expected, "expected [%d] but got [%d]", expected, res);
 }
 
-Test(ft_atoi, testBasePepinoHex)
+Test(ft_atoi, testBasePickleHex)
 {
   int res2 = ft_atoi("\tPickle 0x04 hex - x -33\n\n\r\r\t\t");
   int expected2 = 4;
