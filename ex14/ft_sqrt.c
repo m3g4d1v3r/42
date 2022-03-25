@@ -6,13 +6,13 @@
 /*   By: msubtil- <msubtil-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 21:05:30 by msubtil-          #+#    #+#             */
-/*   Updated: 2022/03/25 21:16:56 by msubtil-         ###   ########.fr       */
+/*   Updated: 2022/03/25 21:23:51 by msubtil-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_sqrt(int nb)
+int	ft_sqrt(int nb)
 {
 	int	i;
 
