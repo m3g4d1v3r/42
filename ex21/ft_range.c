@@ -6,12 +6,12 @@
 /*   By: msubtil- <msubtil-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:18:13 by msubtil-          #+#    #+#             */
-/*   Updated: 2022/03/25 22:53:36 by msubtil-         ###   ########.fr       */
+/*   Updated: 2022/03/29 19:40:21 by msubtil-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#define FT_NULL (void *) 0
+#define FT_NULL 0x0
 
 int	*ft_range(int min, int max)
 {
@@ -20,7 +20,7 @@ int	*ft_range(int min, int max)
 	int				*new_arr;
 
 	if (min >= max)
-		return (FT_NULL);
+		return (0x0);
 	else if (min < 0)
 		u_max = -1 * min + max;
 	else
