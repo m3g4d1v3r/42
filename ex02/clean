@@ -1,2 +1,2 @@
 #!/bin/sh
-find -type f -name "*~" -o -name "\#*#"
+find -type f \( -name "*~" -o -name "\#*#" \) -printf '%p\n' -delete

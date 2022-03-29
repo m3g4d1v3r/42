@@ -6,7 +6,7 @@
 /*   By: msubtil- <msubtil-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 22:03:13 by msubtil-          #+#    #+#             */
-/*   Updated: 2022/03/25 22:16:22 by msubtil-         ###   ########.fr       */
+/*   Updated: 2022/03/29 19:36:21 by msubtil-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ char	*ft_strdup(char *src)
 	new_str = (char *) malloc(sizeof(char) * str_size);
 	while (*src)
 		*new_str++ = *src++;
+	*new_str = '\0';
 	return (new_str - str_size);
 }

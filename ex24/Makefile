@@ -13,7 +13,7 @@ RM		= rm -f
 
 CFLAGS	= -Wall -Werror -Wextra -I${INCD}
 
-%.o:		${SRCD}%.c ${INCD}%.h
+%.o:		${SRCD}%.c
 			${CC} ${CFLAGS} -c $< -o $@
 
 ${NAME}:	${OBJS}
