@@ -1,4 +1,9 @@
-SRCS	= ${wildcard srcs/*.c}
+SRCD	= srcs/
+SRCS	= ft_putchar.c \
+		  ft_putstr.c \
+		  ft_strcmp.c \
+		  ft_strlen.c \
+		  ft_swap.c
 INCD	= includes/
 OBJS	= ${SRCS:.c=.o}
 NAME	= libft.a
@@ -8,12 +13,11 @@ RM		= rm -f
 
 CFLAGS	= -Wall -Werror -Wextra -I${INCD}
 
-%.o:		%.c
+%.o:		${SRCD}%.c ${INCD}%.h
 			${CC} ${CFLAGS} -c $< -o $@
 
 ${NAME}:	${OBJS}
-			ar rc ${NAME} ${OBJS}
-			ranlib ${NAME}
+			ar rcs ${NAME} ${OBJS}
 
 all:		${NAME}
 
